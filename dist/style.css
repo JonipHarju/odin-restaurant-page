@@ -34,7 +34,10 @@ body {
   padding-left: 50px;
   padding-top: 25px;
 }
-
+#headline:hover {
+  cursor: pointer;
+  color: pink;
+}
 #navbarList {
   display: flex;
   justify-content: center;
@@ -46,6 +49,12 @@ body {
   padding-left: 50px;
   font-size: 2rem;
   padding-top: 10px;
+}
+
+.listItem:hover {
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: pink;
 }
 
 #midSection {
@@ -135,11 +144,18 @@ body {
   color: #97ce53;
   font-size: 1.7rem;
   transition: 0.2s;
+  overflow: hidden;
+  border-radius: 20px;
   opacity: 0%;
 }
 
 #menuItem1:hover .listItemInfoContainer {
   opacity: 90%;
+}
+
+.menuItem:hover {
+  border-style: groove;
+  border-color: #97ce53;
 }
 #menuItem2:hover .listItemInfoContainer {
   opacity: 80%;
