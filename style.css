@@ -30,9 +30,9 @@ body {
 }
 
 #headline {
-  font-size: 6rem;
-  padding-top: 30px;
+  font-size: 5rem;
   padding-left: 50px;
+  padding-top: 25px;
 }
 
 #navbarList {
@@ -45,6 +45,7 @@ body {
 .listItem {
   padding-left: 50px;
   font-size: 2rem;
+  padding-top: 10px;
 }
 
 #midSection {
@@ -75,4 +76,75 @@ body {
 #infoSectionHeader3 {
   font-size: 2rem;
   margin: 0;
+}
+
+#menuContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#foodMenu {
+  width: 20%;
+  min-height: 94vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+#menuSectionHeader {
+  font-size: 3rem;
+}
+.menuItem {
+  opacity: 100%;
+  width: 400px;
+  height: 250px;
+  background-color: black;
+  border-radius: 40px;
+  border: 15px solid black;
+  margin: 10px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#menuItem1 {
+  background-image: url(https://images.unsplash.com/photo-1631397833242-fc6213046352?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250&q=20);
+  background-size: cover;
+}
+#menuItem2 {
+  background-image: url(https://images.unsplash.com/photo-1609873539821-3b46e00a0313?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250&q=20);
+  background-size: cover;
+}
+#menuItem3 {
+  background-image: url(https://images.unsplash.com/photo-1582293041079-7814c2f12063?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250&q=20);
+  background-size: cover;
+}
+.listItemInfoContainer {
+  width: 100%;
+  height: 40%;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+  color: #97ce53;
+  font-size: 1.7rem;
+  transition: 0.2s;
+  opacity: 0%;
+}
+
+#menuItem1:hover .listItemInfoContainer {
+  opacity: 90%;
+}
+#menuItem2:hover .listItemInfoContainer {
+  opacity: 80%;
+}
+
+#menuItem3:hover .listItemInfoContainer {
+  opacity: 80%;
 }
